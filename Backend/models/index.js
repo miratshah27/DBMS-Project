@@ -1,6 +1,6 @@
 import Sequelize from "sequelize";
 import mysql from "mysql2";
-import dbconfig from "../Details/dbconfig.js";
+import dbconfig from "../config/dbconfig.js";
 
 // Importing all the models
 import album_model from "./album.model.js";
