@@ -1,4 +1,4 @@
-<<<<<<< HEAD:Frontend/profile.css
+
 @font-face {
     font-family: "ProximaNova-Regular";
     src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/ProximaNova-Regular.eot");
@@ -113,7 +113,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
     box-shadow: aqua;
-=======
+  }
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body{
@@ -396,5 +396,4 @@ i {
     background-color: rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
     box-shadow: aqua;
->>>>>>> 93e4a2366ad795006ac81f989238d2e831273649:Frontend/Views/profile.css
   }
