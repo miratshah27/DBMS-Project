@@ -1,42 +1,42 @@
-const user = (sequelize, Sequelize) => {
-    const User = sequelize.define("user", {
+const model = (sequelize, Sequelize) => {
+    const Model = sequelize.define("user", {
       
       User_ID: {
         type: Sequelize.INTEGER,
         primaryKey: true,
-        allowNull: 0
+        allowNull: false
       },
       User_Name: {
         type: Sequelize.STRING,
-        allowNull: 0
+        allowNull: false
       },
       Email: {
         type: Sequelize.STRING,
-        allowNull: 0
+        allowNull: false
       },
       Password: {
         type: Sequelize.STRING,
-        allowNull: 0
+        allowNull: false
       },
       Gender : {
         type: Sequelize.INTEGER,
-        allowNull: 1
+        allowNull: true
       },
       Birthdate : {
         type: Sequelize.DATE,
-        allowNull: 1
+        allowNull: true
       },
       Location : {
         type: Sequelize.INTEGER,
-        allowNull: 1
+        allowNull: true
       },
       SubscriptionType : {
         type: Sequelize.INTEGER,
-        allowNull: 1
+        allowNull: true
       },
       Active_Status : {
         type: Sequelize.INTEGER,
-        allowNull: 1
+        allowNull: true
       },
       Last_Login : {
         type: 'TIMESTAMP',
@@ -48,9 +48,11 @@ const user = (sequelize, Sequelize) => {
         defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
         allowNull: false
       }
+    },{
+      freezeTableName: true, timestamps: false
     });
   
-    return User;
+    return Model;
   };
 
-export default user;
+export default model;
