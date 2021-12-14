@@ -1,6 +1,7 @@
 const user = (sequelize, Sequelize) => {
     const User = sequelize.define("user", {
-        User_ID: {
+      
+      User_ID: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         allowNull: 0
