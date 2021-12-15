@@ -10,6 +10,7 @@ import registrationRouter from "./routes/register.js";
 import loginRouter from "./routes/login.js";
 import logoutRouter from "./routes/logout.js";
 import dashboardRouter from "./routes/dashboard.js";
+import songsRoute from "./routes/song.js"
 
 const app = express();
 const PORT = process.env.PORT || 1000;
@@ -26,14 +27,12 @@ app.use(express.static("public"));
 app.get('/', (req,res)=>{
     res.render("index") 
 })
+
+app.use('/', songsRoute);
 app.use('/', registrationRouter);
 app.use('/', loginRouter);
 app.use('/', logoutRouter);
 app.use('/', dashboardRouter);
-
-
-
-
 
 
 // setting up server
