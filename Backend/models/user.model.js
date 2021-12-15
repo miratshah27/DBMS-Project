@@ -4,6 +4,7 @@ const model = (sequelize, Sequelize) => {
       User_ID: {
         type: Sequelize.INTEGER,
         primaryKey: true,
+        autoIncrement: true,
         allowNull: false
       },
       User_Name: {
